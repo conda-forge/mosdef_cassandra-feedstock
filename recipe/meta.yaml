@@ -1,6 +1,6 @@
 {% set name = "mosdef_cassandra" %}
-{% set version = "0.1.1" %}
-{% set sha256 = "a430a8dba429d72b336b4f67ac4538f4cf73d1ec55f591f7971544cc93beb24e" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "aa8a265b653ce40a7955ea14eb92d87b29987f5ba026444dd65449a136765450" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
 
 build:
   number: 0
-  skip: True  # [win or py<37]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  skip: true  # [win or py<37]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -25,8 +25,10 @@ requirements:
     - parmed
     - openbabel
     - networkx
-    - mbuild >=0.10.5
+    - mbuild >=0.10.6
     - cassandra >=1.2.2
+    - unyt >=2.4
+    - pandas >=1.0
 
 test:
   imports:
@@ -37,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.rst
-  summary: 'MoSDeF compatible wrapper for Cassandra Monte Carlo code'
+  summary: MoSDeF compatible wrapper for Cassandra Monte Carlo code
   description: |
     mosdef_cassandra is a Python wrapper for the Cassandra Monte Carlo
     code <https://cassandra.nd.edu>. It provides close integration
