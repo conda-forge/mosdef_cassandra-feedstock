@@ -5,7 +5,7 @@ Home: https://github.com/MaginnGroup/mosdef_cassandra
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: MoSDeF compatible wrapper for Cassandra Monte Carlo code
 
