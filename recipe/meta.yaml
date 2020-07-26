@@ -1,13 +1,13 @@
 {% set name = "mosdef_cassandra" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "aa8a265b653ce40a7955ea14eb92d87b29987f5ba026444dd65449a136765450" %}
+{% set version = "0.2.1" %}
+{% set sha256 = "cb4ea4440869880d38f9323a3bc4afc2861701c6799459bea5ff222df2981e0c" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/MaginnGroup/mosdef_cassandra/archive/v{{ version }}.tar.gz
+  url: https://github.com/MaginnGroup/mosdef_cassandra/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
