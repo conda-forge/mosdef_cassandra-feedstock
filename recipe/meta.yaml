@@ -1,6 +1,6 @@
 {% set name = "mosdef_cassandra" %}
-{% set version = "0.2.2" %}
-{% set sha256 = "263ced430e927d3a2069948e5e4b3844cd083cfe3949d4ec1b60920b60bfd331" %}
+{% set version = "0.2.3" %}
+{% set sha256 = "c9c9b631c0ffb068dbd3758353cf182b6d8e1855ea5c7d0f3afe9bb16e719223" %}
 
 package:
   name: {{ name|lower }}
