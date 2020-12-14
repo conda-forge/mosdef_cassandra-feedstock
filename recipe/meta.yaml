@@ -1,6 +1,6 @@
 {% set name = "mosdef_cassandra" %}
-{% set version = "0.2.3" %}
-{% set sha256 = "c9c9b631c0ffb068dbd3758353cf182b6d8e1855ea5c7d0f3afe9bb16e719223" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "cea1a6dd9104b27fe2233141cfd0fccb241d694be9dcb809124abd936a9cc25f" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,12 +23,14 @@ requirements:
     - python
     - numpy
     - parmed
-    - openbabel
     - networkx
+    - foyer >=0.7.6
     - mbuild >=0.10.8
+    - openbabel
     - cassandra >=1.2.2
     - unyt >=2.4
     - pandas >=1.0
+    - constrainmol
 
 test:
   imports:
