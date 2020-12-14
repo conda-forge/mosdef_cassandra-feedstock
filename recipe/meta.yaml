@@ -23,12 +23,14 @@ requirements:
     - python
     - numpy
     - parmed
-    - openbabel
     - networkx
+    - foyer >= 0.7.6
     - mbuild >=0.10.8
+    - openbabel
     - cassandra >=1.2.2
     - unyt >=2.4
     - pandas >=1.0
+    - constrainmol
 
 test:
   imports:
