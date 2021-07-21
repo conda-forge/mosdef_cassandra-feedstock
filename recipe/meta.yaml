@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,7 +26,6 @@ requirements:
     - networkx
     - foyer >=0.7.6
     - mbuild >=0.11.0
-    - openbabel
     - cassandra >=1.2.2
     - unyt >=2.4
     - pandas >=1.0
