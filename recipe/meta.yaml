@@ -24,8 +24,8 @@ requirements:
     - numpy
     - parmed
     - networkx
-    - foyer >=0.7.6
-    - mbuild >=0.11.0
+    - foyer >=0.11.0
+    - mbuild >=0.15.0
     - cassandra >=1.2.2
     - unyt >=2.4
     - pandas >=1.0
