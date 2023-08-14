@@ -1,11 +1,11 @@
-About mosdef_cassandra
-======================
+About mosdef_cassandra-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mosdef_cassandra-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/MaginnGroup/mosdef_cassandra
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mosdef_cassandra-feedstock/blob/main/LICENSE.txt)
 
 Summary: MoSDeF compatible wrapper for Cassandra Monte Carlo code
 
