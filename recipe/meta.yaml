@@ -1,6 +1,6 @@
 {% set name = "mosdef_cassandra" %}
-{% set version = "0.3.2" %}
-{% set sha256 = "eec5f0fc0e7f5393824ce2dfb1e9fbbd4917dae6bfedf04ca9018031256e0daf" %}
+{% set version = "0.4.0-alpha.1" %}
+{% set sha256 = "2e763267824c611d83cdffa23196b2fa8afd2a91e2b8cdc4d4128c549f04f803" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win or py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
